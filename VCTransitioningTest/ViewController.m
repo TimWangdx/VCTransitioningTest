@@ -10,6 +10,7 @@
 #import "TWOneViewController.h"
 #import "TWTwoViewController.h"
 #import "TWFourViewController.h"
+#import "TWFiveViewController.h"
 
 @interface ViewController ()<TWOneViewControllerDelegate>
 
@@ -51,6 +52,13 @@
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
     UIViewController *vc = [sb instantiateViewControllerWithIdentifier:NSStringFromClass([TWFourViewController class])];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)cirlceBtnClicked:(UIButton *)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:NSStringFromClass([TWFiveViewController class])];
     
     [self.navigationController pushViewController:vc animated:YES];
 }

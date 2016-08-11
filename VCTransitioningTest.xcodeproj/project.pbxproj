@@ -28,6 +28,8 @@
 		EB8B0AB01D5C685400609280 /* TWPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8B0AAF1D5C685400609280 /* TWPopAnimation.m */; };
 		EB8B0AB31D5C74ED00609280 /* TWFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8B0AB21D5C74ED00609280 /* TWFourViewController.m */; };
 		EB8B0AB61D5C750B00609280 /* pic2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EB8B0AB51D5C750B00609280 /* pic2.jpeg */; };
+		EB8B0ABA1D5C7E7000609280 /* TWFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8B0AB91D5C7E7000609280 /* TWFiveViewController.m */; };
+		EB8B0ABC1D5C82D200609280 /* pic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB8B0ABB1D5C82D200609280 /* pic1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,9 @@
 		EB8B0AB11D5C74ED00609280 /* TWFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFourViewController.h; sourceTree = "<group>"; };
 		EB8B0AB21D5C74ED00609280 /* TWFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFourViewController.m; sourceTree = "<group>"; };
 		EB8B0AB51D5C750B00609280 /* pic2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpeg; sourceTree = "<group>"; };
+		EB8B0AB81D5C7E7000609280 /* TWFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFiveViewController.h; sourceTree = "<group>"; };
+		EB8B0AB91D5C7E7000609280 /* TWFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFiveViewController.m; sourceTree = "<group>"; };
+		EB8B0ABB1D5C82D200609280 /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +142,7 @@
 		EB8B0A591D5C0AC500609280 /* VCTransitioningTest */ = {
 			isa = PBXGroup;
 			children = (
+				EB8B0AB71D5C7E5A00609280 /* Circle */,
 				EB8B0AB41D5C74F500609280 /* Page */,
 				EB8B0A9D1D5C5FDC00609280 /* Push */,
 				EB8B0A9C1D5C5FCD00609280 /* Present */,
@@ -219,8 +225,18 @@
 				EB8B0AB11D5C74ED00609280 /* TWFourViewController.h */,
 				EB8B0AB21D5C74ED00609280 /* TWFourViewController.m */,
 				EB8B0AB51D5C750B00609280 /* pic2.jpeg */,
+				EB8B0ABB1D5C82D200609280 /* pic1.jpg */,
 			);
 			name = Page;
+			sourceTree = "<group>";
+		};
+		EB8B0AB71D5C7E5A00609280 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				EB8B0AB81D5C7E7000609280 /* TWFiveViewController.h */,
+				EB8B0AB91D5C7E7000609280 /* TWFiveViewController.m */,
+			);
+			name = Circle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +347,7 @@
 				EB8B0A671D5C0AC500609280 /* Assets.xcassets in Resources */,
 				EB8B0A651D5C0AC500609280 /* Main.storyboard in Resources */,
 				EB8B0AA51D5C62B000609280 /* XWMagicMoveCell.xib in Resources */,
+				EB8B0ABC1D5C82D200609280 /* pic1.jpg in Resources */,
 				EB8B0AB61D5C750B00609280 /* pic2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB8B0A9B1D5C4DF200609280 /* TWPanTransition.m in Sources */,
+				EB8B0ABA1D5C7E7000609280 /* TWFiveViewController.m in Sources */,
 				EB8B0A8F1D5C0B5D00609280 /* TWOneViewController.m in Sources */,
 				EB8B0AAA1D5C64F300609280 /* TWThreeViewController.m in Sources */,
 				EB8B0A621D5C0AC500609280 /* ViewController.m in Sources */,
