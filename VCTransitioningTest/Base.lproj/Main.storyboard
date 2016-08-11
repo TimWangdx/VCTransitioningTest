@@ -31,14 +31,23 @@
                                     <action selector="pushBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hr9-yZ-Wqy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcd-Nh-fFQ">
+                                <rect key="frame" x="283" y="201" width="35" height="30"/>
+                                <state key="normal" title="page"/>
+                                <connections>
+                                    <action selector="pageBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IDv-9H-kbQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qHm-Wp-LgM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CTO-4D-v9l"/>
                             <constraint firstItem="ghm-Se-9wP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Spu-1N-2Hz"/>
+                            <constraint firstItem="Tcd-Nh-fFQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="esk-Q1-haF"/>
                             <constraint firstItem="ghm-Se-9wP" firstAttribute="top" secondItem="qHm-Wp-LgM" secondAttribute="bottom" constant="19" id="m7E-fi-05Z"/>
                             <constraint firstItem="qHm-Wp-LgM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qT0-Oa-tl3"/>
                             <constraint firstItem="qHm-Wp-LgM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="rGG-mF-hAJ"/>
+                            <constraint firstItem="Tcd-Nh-fFQ" firstAttribute="top" secondItem="ghm-Se-9wP" secondAttribute="bottom" constant="22" id="zJv-kc-US0"/>
                             <constraint firstItem="qHm-Wp-LgM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zhF-aA-3tc"/>
                         </constraints>
                         <variation key="default">
@@ -134,6 +143,33 @@
             </objects>
             <point key="canvasLocation" x="2387" y="278"/>
         </scene>
+        <!--Four View Controller-->
+        <scene sceneID="8xi-HH-xJL">
+            <objects>
+                <viewController storyboardIdentifier="TWFourViewController" id="XQl-o6-hjo" customClass="TWFourViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dSH-cz-oaQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="nLa-op-5ES"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WF3-Za-5zO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Bdw-kb-Khj">
+                                <rect key="frame" x="-160" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="Bdw-kb-Khj" id="pSp-g9-FSf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEN-0A-IXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2898" y="294"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="CwJ-eD-8Zv">
             <objects>
@@ -154,6 +190,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pic2.jpeg" width="1200" height="2130"/>
         <image name="zrx4.jpg" width="650" height="650"/>
     </resources>
 </document>

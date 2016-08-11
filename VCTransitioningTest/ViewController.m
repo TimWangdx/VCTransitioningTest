@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TWOneViewController.h"
 #import "TWTwoViewController.h"
+#import "TWFourViewController.h"
 
 @interface ViewController ()<TWOneViewControllerDelegate>
 
@@ -19,6 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+//    CAGradientLayer *toGradient = [CAGradientLayer layer];
+//    toGradient.frame = self.view.bounds;
+//    toGradient.colors = @[(id)[UIColor blackColor].CGColor,
+//                          (id)[UIColor blackColor].CGColor];
+//    toGradient.startPoint = CGPointMake(0.0, 0.5);
+//    toGradient.endPoint = CGPointMake(0.8, 0.5);
+//    
+//    UIView *toShadow = [[UIView alloc]initWithFrame:self.view.bounds];
+//    toShadow.backgroundColor = [UIColor clearColor];
+//    [toShadow.layer insertSublayer:toGradient atIndex:1];
+//    toShadow.alpha = 0.7;
+//    [self.view addSubview:toShadow];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,6 +46,15 @@
     
     [self presentViewController:vc animated:YES completion:nil];
 }
+
+- (IBAction)pageBtnClicked:(UIButton *)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:NSStringFromClass([TWFourViewController class])];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (IBAction)pushBtnClicked:(UIButton *)sender {
 //    TWTwoViewController *vc = [[TWTwoViewController alloc] init];
     
