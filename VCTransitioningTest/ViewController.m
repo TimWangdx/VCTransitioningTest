@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TWOneViewController.h"
+#import "TWTwoViewController.h"
 
 @interface ViewController ()<TWOneViewControllerDelegate>
 
@@ -30,6 +31,15 @@
     vc.delegate = self;
     
     [self presentViewController:vc animated:YES completion:nil];
+}
+- (IBAction)pushBtnClicked:(UIButton *)sender {
+//    TWTwoViewController *vc = [[TWTwoViewController alloc] init];
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:NSStringFromClass([TWTwoViewController class])];
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)oneViewControllerDidClickedMissBtn:(UIButton*)btn{
